@@ -9,7 +9,7 @@ from config import emailID , password , bot_link
 
 class Voter:
     def __init__(self):
-        self.driver = webdriver.Chrome('chromedriver.exe')
+        self.driver = webdriver.Chrome()
         self.driver.get(bot_link)
 
     def login(self):
