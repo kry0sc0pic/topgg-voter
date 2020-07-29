@@ -5,12 +5,12 @@ Date:   02 April 2020
 '''
 from selenium import webdriver
 from time import sleep
-from secrets import emailID , password
+from config import emailID , password , bot_link
 
 class Voter:
     def __init__(self):
         self.driver = webdriver.Chrome('chromedriver.exe')
-        self.driver.get('https://top.gg/bot/pokecord/vote')
+        self.driver.get(bot_link)
 
     def login(self):
 
@@ -40,15 +40,6 @@ class Voter:
         self.login()
         sleep(2)
         self.vote()
-
-# If you want to use this file as a standalone program , uncomment the code below . Only remove the ''' '''
-'''
-voterBot = Voter() Creates a Voter object
-#You can run this in 2 ways
-#1:
-voterBot.login()
-voterBot.vote()
-#
-#2:
-voterBot.run
-'''
+ 
+bot = Voter()
+bot.run()
