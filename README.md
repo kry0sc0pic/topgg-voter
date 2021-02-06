@@ -1,8 +1,6 @@
 # PokeVoter
 
-A bot written in selenium to vote any bots on top.gg, Initially written for Pokecord (Explains the Repo Name).
-
-Edit: I heard that Pokecord is not online anymore.
+A bot written in selenium to vote any bots on top.gg.
 
 ### Prequisites:
 - [Python 3](https://www.python.org)
